@@ -1,0 +1,30 @@
+{%extends "layout.twig"%}
+
+{% block content %}
+    <h1>Add Jobs</h1>
+    <div class="alert alert-primary" role="alert">
+        {{ responseMessage }}
+    </div>
+    <form action="/Curso/add/job" method="post" enctype="multipart/form-data"> 
+        <label for="">Tlitle:</label>
+        <input type="text" name="title"><br>
+        <label for="">Description:</label>
+        <input type="text" name="description"><br>
+        <input type="file" name="logo"><br>
+        <button type="submit">Save</button>
+    </form>
+
+    <h1>Add projects</h1>
+    <div class="alert alert-primary" role="alert">
+        {{ responseMessage }}
+    </div>
+    <form action="/Curso/add/job" method="post" enctype="multipart/form-data> 
+        <label for="">Tlitle:</label>
+        <input type="text" name="title"><br>
+        <label for="">Description:</label>
+        <input type="text" name="description"><br>
+        <input type="file" name="logo1"><br>
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}
+
